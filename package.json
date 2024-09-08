@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "middleware.postgres.up": "docker run --rm --name demo-postgres -e POSTGRES_PASSWORD=pass -p 5432:5432 postgres:16",
+    "migrate": "prisma migrate dev"
   },
   "keywords": [],
   "author": "",
